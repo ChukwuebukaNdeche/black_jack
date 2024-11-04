@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url("./Image/table.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(3, 41, 3);
+}
+
+.jackbox {
+    border: 2px solid green;
+    border-radius: 5px;
+    width: 50%;
+}
+
+h1 {
+    color: goldenrod;
+    margin: 10px;
+    font-size: 50px;
+}
+
+#message-el {
+    font-style: italic;
+    margin: 7px 0;
+}
+
+button {
+    width: 150px;
+    background: goldenrod;
+    color: rgb(5, 80, 5);
+    margin: 3px;
+    border: 0;
+    padding: 5px;
+    font-weight: bold;
+    outline: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(218, 176, 72);
+    transform: scale(1.06);
+}
+
+button:active {
+    background: goldenrod;
+    transform: scale(1.06);
+}
+
+#cards-el,
+#sum-el {
+    margin: 5px 0;
+}
+
+#player-el {
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+    button:hover {
+        transform: scale(1);
+        background: goldenrod;
+    }
+
+    button:active {
+        background-color: rgb(218, 176, 72);
+    }
+}
+
+@media (max-width: 560px) {
+    .jackbox {
+        width: 80%;
+    }
+}
+
+@media (max-width: 310px) {
+    .jackbox {
+        border: 3px solid green;
+        width: 100%;
+    }
+}
